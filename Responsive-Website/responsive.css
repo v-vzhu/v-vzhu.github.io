@@ -1,0 +1,131 @@
+/* === For your Responsive CSS === */
+
+body{
+    font-size: 1rem;
+    line-height: 1.29rem;
+}
+
+h2{
+    font-size: 2.14rem;
+}
+
+a{
+    font-size: 1rem;
+}
+
+#legal{
+    font-size: 0.71rem;
+}
+
+#nav a{
+    margin-right: 0.54rem;
+}
+
+#splash{
+    font-size: 3.43rem;
+    line-height: 4.29rem;
+    height: 25rem;
+}
+
+.fab{
+    font-size: 2.14rem;
+    margin-right: 0.54rem;
+}
+
+footer{
+    padding: 0.54rem;
+    padding-top: 2.68rem;
+}
+
+header{
+    padding: 1.07rem;
+}
+
+button{
+    padding: 1.07rem;
+    font-size: 2.14rem;
+    margin-top: 0.8rem;
+}
+
+/* === Images & others === */
+
+img{
+    max-width: 100%;
+}
+
+#nav{
+    text-align: right;
+    padding-top: 4.55rem;
+}
+
+/* === Devices === */
+
+@media screen and (max-width: 600px){
+    header{
+        grid-template-columns: 100%;
+    }
+    
+    #nav{
+        padding: 0px;
+    }
+    
+    #nav a{
+        display: block;
+        background-color: orange;
+        text-align: center;
+        padding: 0.54rem;
+    }
+    
+    #logo{
+        text-align: center;
+    }
+    
+    #splash{
+        font-size: 2rem;
+        line-height: 2.5rem;
+        height: 10.7rem;
+    }
+    
+    main{
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+    
+    #splash, #app{
+        grid-column: 1/2;
+    }
+    
+    footer{
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+    
+    #social-media{
+        text-align: center;
+    }
+    
+    #mobile-menu{
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+@media screen and (min-width: 601px){
+    #mobile-menu{
+        display: none;
+    }
+}
+
+/* === Dark Mode === */
+
+@media (prefers-color-scheme: dark){
+    main, footer, header{
+        background-color: #525252;
+        color: #ffffff;
+    }
+    
+    #nav a{
+        color: #ffffff;
+    }
+}
